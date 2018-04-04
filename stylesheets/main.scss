@@ -1,0 +1,52 @@
+$black: #111;
+$white: #fff;
+$grey: #f5f5f5;
+$font-header: 'Poppins', sans-serif;
+$font-body: 'Roboto', sans-serif;
+
+body {
+  font-size: 16px;
+  background-color: $grey;
+  color: $black;
+  font-family: $font-body;
+}
+
+h2 {
+  font-family: $font-header;
+  margin: 1em 0 1em 0;
+  font-size: 2em;
+}
+h3 {
+  margin: 0 0 8px 0;
+}
+
+.navbar {
+  background-color: $black;
+}
+
+ul.navbar-nav li {
+  margin-right: 1em;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  & a > svg {
+    margin-right: 0.15em;
+  }
+}
+
+.main {
+  margin: 0 auto;
+  padding: 0 2em;
+  background-color: $white;
+  border: 1px solid #eee;
+  border-top: 0;
+}
+
+.summery {
+  text-indent: 1em;
+  font-size: 1.1em;
+}
+
+section {
+  padding: 1em 0;
+}
