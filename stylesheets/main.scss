@@ -18,6 +18,7 @@ h2 {
 }
 h3 {
   margin: 0 0 8px 0;
+  font-size: 1.75em;
 }
 
 .navbar {
@@ -47,6 +48,85 @@ ul.navbar-nav li {
   font-size: 1.1em;
 }
 
+.praise {
+  font-size: 1.1em;
+  padding: 0;
+  list-style-type: none;
+  li {
+    margin-bottom: 0.75em;
+    &:nth-of-type(odd) {
+      background-color: $grey;
+    }
+  }
+
+  p {
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    font-weight: 700;
+  }
+}
+blockquote {
+  display: inline;
+  margin: 0;
+  font-style: italic;
+  border-left: 5px solid #ea8620 !important;
+}
+
+#highlights-wrapper {
+  border: 1px solid #dfdfdf;
+  border-radius: 0.5em;
+  background-color: #f8f8f8;
+  background-image: url(../img/cubes.png);
+  box-shadow: 2px 2px 7px 1px #a1a1a1;
+}
+
+#highlights {
+  // background-color: #000000;
+  font-size: 1.1em;
+  & p {
+    margin: 0 6em;
+    padding-bottom: 3em;
+  }
+}
+
 section {
   padding: 1em 0;
 }
+
+.carousel-indicators li {
+  background-color: #999 !important;
+  background-color: $black !important;
+  fill: red;
+}
+
+.carousel-indicators .active {
+  background-color: #444 !important;
+}
+
+#portrait {
+  float: right;
+  width: 100%;
+}
+
+// .carousel-control-prev-icon,
+// .carousel-control-next-icon {
+//   height: 100px;
+//   width: 100px;
+//   outline: black;
+//   background-size: 100%, 100%;
+//   border-radius: 50%;
+//   background-image: none;
+// }
+
+// .carousel-control-next-icon:after
+// {
+//   content: '->';
+//   font-size: 55px;
+//   color: red;
+// }
+//
+// .carousel-control-prev-icon:after {
+//   content: '<';
+//   font-size: 55px;
+//   color: red;
+// }
