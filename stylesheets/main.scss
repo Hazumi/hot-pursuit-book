@@ -13,8 +13,9 @@ body {
 
 h2 {
   font-family: $font-header;
-  margin: 1em 0 1em 0;
-  font-size: 2em;
+  margin: 0.5em 0 1em 0;
+  font-size: 2.2em;
+  font-weight: 700;
 }
 h3 {
   margin: 0 0 8px 0;
@@ -43,7 +44,16 @@ ul.navbar-nav li {
   border-top: 0;
 }
 
-.summery {
+.book {
+  margin: 2.5em auto;
+}
+
+.book:hover {
+  transform: scale(1.05);
+
+}
+
+p {
   text-indent: 1em;
   font-size: 1.1em;
 }
@@ -84,13 +94,19 @@ blockquote {
   // background-color: #000000;
   font-size: 1.1em;
   & p {
-    margin: 0 6em;
+    margin: 0 2em;
     padding-bottom: 3em;
   }
 }
 
+@media (min-width: 768px) {
+  #highlights p {
+    margin: 0 6em;
+  }
+}
+
 section {
-  padding: 1em 0;
+  padding: 2em 0;
 }
 
 .carousel-indicators li {
@@ -106,6 +122,25 @@ section {
 #portrait {
   float: right;
   width: 100%;
+}
+
+.card {
+  display: block;
+  margin: 0 auto;
+}
+
+.card-body {
+  text-align: center;
+  a {
+    color: $black;
+  }
+}
+
+footer {
+  padding: 0.25em;
+  text-align: center;
+  font-size: 0.8em;
+  background-color: darken($grey, 10);
 }
 
 // .carousel-control-prev-icon,
