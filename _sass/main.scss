@@ -1,0 +1,74 @@
+/* Variables */
+$primary-color: #fcaf31;
+$secondary-color: #212121;
+$white: #f8f8f8;
+
+/* General */
+body {
+  font-size: 16px;
+}
+section {
+  margin: 2em 0;
+}
+.btn {
+  font-weight: 500;
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+}
+.btn__primary {
+  background-color: $primary-color;
+}
+.btn__primary:hover {
+  background-color: lighten($primary-color, 6%);
+}
+.btn__secondary {
+  background-color: $secondary-color;
+}
+.btn__secondary:hover {
+  background-color: lighten($secondary-color, 6%);
+}
+
+/* Navigation */
+.nav__color-bar {
+  height: 4px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f70000+0,e5bf00+100 */
+  background: #f70000; /* Old browsers */
+  background: -moz-linear-gradient(left,  #f70000 0%, #e5bf00 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #f70000 0%,#e5bf00 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #f70000 0%,#e5bf00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f70000', endColorstr='#e5bf00',GradientType=1 ); /* IE6-9 */
+}
+.navbar {
+  background-color: $secondary-color;
+}
+
+/* Carousel */
+@media screen and (max-width: 700px) {
+  .testi {
+    height: 256px;
+  }
+}
+
+/* Testimonal */
+.testi {
+  padding: 1.5em;
+  background-color: $white;
+  border-radius: 0.75em;
+  li {
+    background-color: $secondary-color;
+  }
+  blockquote {
+    margin: 0 auto 0.4em auto;
+    max-width: 800px;
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+}
+.testi__author {
+  margin-bottom: 2rem;
+  font-size: 0.9em;
+}
+.testi__quotemark {
+  margin: 0;
+  font-size: 2.5em;
+}
